@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		F2FD96B91A866CEA0047BB9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD96B81A866CEA0047BB9C /* main.m */; };
 		F2FD96BC1A866CEA0047BB9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD96BB1A866CEA0047BB9C /* AppDelegate.m */; };
-		F2FD96BF1A866CEA0047BB9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD96BE1A866CEA0047BB9C /* ViewController.m */; };
+		F2FD96BF1A866CEA0047BB9C /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD96BE1A866CEA0047BB9C /* Home.m */; };
 		F2FD96C21A866CEA0047BB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2FD96C01A866CEA0047BB9C /* Main.storyboard */; };
 		F2FD96C41A866CEA0047BB9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FD96C31A866CEA0047BB9C /* Images.xcassets */; };
 		F2FD96C71A866CEA0047BB9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FD96C51A866CEA0047BB9C /* LaunchScreen.xib */; };
 		F2FD96D31A866CEA0047BB9C /* iAdsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FD96D21A866CEA0047BB9C /* iAdsAppTests.m */; };
+		F2FD96DD1A866EC90047BB9C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FD96DC1A866EC90047BB9C /* iAd.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,15 @@
 		F2FD96B81A866CEA0047BB9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F2FD96BA1A866CEA0047BB9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F2FD96BB1A866CEA0047BB9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F2FD96BD1A866CEA0047BB9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F2FD96BE1A866CEA0047BB9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2FD96BD1A866CEA0047BB9C /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		F2FD96BE1A866CEA0047BB9C /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		F2FD96C11A866CEA0047BB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2FD96C31A866CEA0047BB9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F2FD96C61A866CEA0047BB9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F2FD96CC1A866CEA0047BB9C /* iAdsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAdsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FD96D11A866CEA0047BB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2FD96D21A866CEA0047BB9C /* iAdsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iAdsAppTests.m; sourceTree = "<group>"; };
+		F2FD96DC1A866EC90047BB9C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FD96DD1A866EC90047BB9C /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		F2FD96AA1A866CEA0047BB9C = {
 			isa = PBXGroup;
 			children = (
+				F2FD96DC1A866EC90047BB9C /* iAd.framework */,
 				F2FD96B51A866CEA0047BB9C /* iAdsApp */,
 				F2FD96CF1A866CEA0047BB9C /* iAdsAppTests */,
 				F2FD96B41A866CEA0047BB9C /* Products */,
@@ -83,8 +87,8 @@
 			children = (
 				F2FD96BA1A866CEA0047BB9C /* AppDelegate.h */,
 				F2FD96BB1A866CEA0047BB9C /* AppDelegate.m */,
-				F2FD96BD1A866CEA0047BB9C /* ViewController.h */,
-				F2FD96BE1A866CEA0047BB9C /* ViewController.m */,
+				F2FD96BD1A866CEA0047BB9C /* Home.h */,
+				F2FD96BE1A866CEA0047BB9C /* Home.m */,
 				F2FD96C01A866CEA0047BB9C /* Main.storyboard */,
 				F2FD96C31A866CEA0047BB9C /* Images.xcassets */,
 				F2FD96C51A866CEA0047BB9C /* LaunchScreen.xib */,
@@ -219,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2FD96BF1A866CEA0047BB9C /* ViewController.m in Sources */,
+				F2FD96BF1A866CEA0047BB9C /* Home.m in Sources */,
 				F2FD96BC1A866CEA0047BB9C /* AppDelegate.m in Sources */,
 				F2FD96B91A866CEA0047BB9C /* main.m in Sources */,
 			);
